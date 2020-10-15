@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+
+
+
+        <h1 id="css">Learning JavaScript</h1>
+        <h1 id="css1">Learning JavaScript efficently</h1>
+
+
+
+
+        <script>
+            var change = document.getElementById("css");
+            change.style.color = "red"; //changed the color to red
+            //by this method we can only change one property 
+
+            //2nd method is setAttribute method in which we can specify many properties of the element
+            var change1 = document.getElementById("css1");
+            change1.setAttribute("style", "color:red; border:1px solid black;");
+        </script>
+
+    </body>
+
+</html>
