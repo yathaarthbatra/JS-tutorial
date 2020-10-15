@@ -29,3 +29,10 @@ console.log(sample.lastIndexOf("a")); //returns 25
 sample.replace("Yathaarth", "Batra");
 console.log(sample); //It doesnot affect the original string
 console.log(sample.replace("Yathaarth", "Batra")); //My name is Batra Batra
+
+//toUppercase()-->All the characters in the Upper case
+//toLowercase()-->All the characters in the lower case
+
+//to concatenate strings we use :
+var sample1 = "Hi";
+sample1.concat(sample); //Hi ...........

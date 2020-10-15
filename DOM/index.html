@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <h1>This is Paragaph 1</h1>
+        <h2 id="second">This is Paragaph 2</h2>
+        <h3 class="third">This is Paragaph 3</h3>
+
+
+        <script type="text/javascript">
+            var a = document.querySelector("h1"); //accessed using queryselector
+            //queryselector gives us the first tag occuring in the DOM
+            a.innerHTML = "This is changed";
+
+            console.log(a);
+
+
+            var b = document.getElementById("second"); //accessed by getid
+            b.innerHTML = "This is also changed";
+            console.log(b);
+
+
+            var c = document.querySelector(".third"); //we cannot change the inner Html 
+            //get element byclass..so inorder to do that we have to use query selector
+            c.innerHTML = "This is also changed";
+            console.log(c);
+
+
+            //if we want to access the inner content of the element using class
+            //we have to mention the index also
+            //var d=document.getElementsByclass("third")[0]//index needs to be mentioned
+        </script>
+    </body>
+
+</html>
